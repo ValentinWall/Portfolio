@@ -1,0 +1,34 @@
+{% extends 'baseAdmin.html.twig' %}
+
+{% block title %} Nouveau Projet {% endblock %}
+{% block body %} 
+
+<h1 class="text-dark text-center"> Créer une catégorie </h1>
+
+{{ form_start(projectForm)}}
+
+    <div class="row">
+        <div class="col-4 offset-2">
+            {{ form_row(projectForm.title) }}
+        </div>
+        <div class="col-4">
+            {{ form_row(projectForm.img) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8 offset-2">
+            {{ form_row(projectForm.description) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-8 offset-2 my-3 text-end">
+            <a href="{{ path('admin_project') }}" class="btn btn-outline-danger me-3"> Annuler </a>
+            <button class="btn btn-success"> Créer </button>
+        </div>
+    </div>
+
+    {{ form_end(projectForm) }}
+
+{% endblock %}

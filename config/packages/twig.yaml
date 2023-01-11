@@ -1,0 +1,15 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    globals:
+        contact_product: 'Portfolio'
+        contact_name: 'Valentin WALLAERT'
+        contact_address: '9E rue de Verdun'
+        contact_postal: '59253'
+        contact_city: 'La Gorgue'
+        contact_phone: '06 24 94 25 33'
+        contact_email: 'wallaert.valentin@gmail.com'
+    form_themes: ['bootstrap_5_layout.html.twig']
+
+when@test:
+    twig:
+        strict_variables: true

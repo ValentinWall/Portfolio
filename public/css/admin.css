@@ -1,0 +1,21 @@
+main {
+    /* min-height: calc(100vh - 54px); */
+}
+
+nav {
+    min-height: calc(100vh - 78.4px - 54px);
+    height:100%;
+}
+
+nav ul li {
+    padding-top:100px;
+}
+
+nav ul li a {
+    text-decoration:none;
+    list-style-type:none;
+}
+
+nav ul li a:hover {
+    color:black;
+}
